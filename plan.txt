@@ -1,0 +1,18 @@
+Имя: M Dot
+Идея: Front-end маркетплейса — современная платформа для покупки и продажи товаров разных продавцов.
+
+Stack:
+- Next.js App Router
+- React
+- TypeScript (strict)
+- Tailwind CSS
+- Axios
+- TanStack Query
+- Jotai
+- React Hook Form + Zod
+- lucide-react
+- Framer Motion / CSS transitions
+- clsx + tailwind-merge
+- Bun
+
+План:
