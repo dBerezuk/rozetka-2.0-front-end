@@ -16,7 +16,7 @@ Next.js App Router, React, TypeScript, Tailwind CSS, TanStack Query, Jotai, Reac
 
 ## Local Setup
 
-1. Install Bun and start the [Rozetka 2.0 backend](https://github.com/dBerezuk/m-dot-back-end).
+1. Install Bun and start the [Rozetka 2.0 backend](https://github.com/dBerezuk/rozetka-2.0-back-end).
 2. Copy [`.env.example`](.env.example) to `.env.local`. By default, the storefront uses the API at `http://localhost:4000`.
 3. Install dependencies and start the dev server.
 
