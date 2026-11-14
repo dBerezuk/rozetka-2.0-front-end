@@ -1,0 +1,2 @@
+export const CART_MAX_QUANTITY = 9999
+export const CART_TRANSFER_LIMIT = 100

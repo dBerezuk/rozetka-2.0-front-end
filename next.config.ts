@@ -1,20 +1,27 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  experimental: {
-    agentFeedback: true,
-  },
-  cacheComponents: true,
-  partialPrefetching: true,
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
-    },
-  },
-};
+	async rewrites() {
+		const apiUrl = process.env.NEXT_PUBLIC_API_URL
 
-export default nextConfig;
+		if (!apiUrl) {
+			throw new Error('NEXT_PUBLIC_API_URL is required')
+		}
+
+		return [{ source: '/api/:path*', destination: `${apiUrl}/:path*` }]
+	},
+	/* config options here */
+	experimental: {
+		agentFeedback: true
+	},
+	turbopack: {
+		rules: {
+			'*.css': {
+				loaders: ['@tailwindcss/turbopack'],
+				as: '*.css'
+			}
+		}
+	}
+}
+
+export default nextConfig
