@@ -2,10 +2,6 @@
 
 The storefront and seller dashboard for a multi-vendor marketplace.
 
-## Preview
-
-![Rozetka 2.0 home page design](design/home-page.jpg)
-
 ## Features
 
 - Browse, search, and filter products. Choose variants, save favorites, and leave ratings.
